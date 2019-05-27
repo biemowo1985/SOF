@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Config.wxi?>
+	<Bundle Name="Bootstrapper" Version="$(var.ProductVersion)" Manufacturer="My Product" 
+          DisableRemove="no" DisableModify="no"
+          UpgradeCode="$(var.ProductUpgradeCode)">
+    
+    <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost" >
+      <Payload SourceFile="$(var.CustomBA.TargetDir)CustomBA.dll" />
+      <Payload SourceFile="$(var.CustomBA.TargetDir)BootstrapperCore.config" />
+      <Payload SourceFile="$(var.CustomBA.TargetDir)Microsoft.Practices.ServiceLocation.dll" />
+      <Payload SourceFile="$(var.CustomBA.TargetDir)Prism.Desktop.Net40.dll" />
+      <Payload SourceFile="$(var.CustomBA.TargetDir)Prism.Interactivity.Net40.dll" />
+      <Payload SourceFile="$(var.CustomBA.TargetDir)System.Windows.Interactivity.dll" />
+    </BootstrapperApplicationRef>
+
+    <WixVariable Id="WixMbaPrereqLicenseUrl" Value=""/>
+    <WixVariable Id="WixMbaPrereqPackageId" Value=""/>
+
+    <Variable Name="ProductName" Type="string" Value="My Product"/>
+
+    <Chain DisableSystemRestore="yes">
+      <MsiPackage Id="SetupProject"
+                  SourceFile="..\SetupProject\bin\Debug\SetupProject.msi"
+                  EnableFeatureSelection="yes"
+                  DisplayInternalUI="no"
+                  Compressed="default">
+        <MsiProperty Name="PRODUCTVERSION" Value="$(var.ProductVersion)"/>
+      </MsiPackage>
+    </Chain>
+	</Bundle>
+</Wix>

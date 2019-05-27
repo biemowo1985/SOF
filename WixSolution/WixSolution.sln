@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBA", "CustomBA\CustomBA.csproj", "{F8B4DD96-8205-401C-A858-34FC0077B02D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomActions", "CustomActions\CustomActions.csproj", "{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SetupProject", "SetupProject\SetupProject.wixproj", "{2CB571A7-3BB1-4B43-B091-D551E1D54A75}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Bootstrapper", "Bootstrapper\Bootstrapper.wixproj", "{1A3C2B4F-704A-4FDA-9257-E317E2700B40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{C4982B0A-A058-4860-8EEE-A328955AC4CD}"
+	ProjectSection(SolutionItems) = preProject
+		Build\burn-manifest.xml = Build\burn-manifest.xml
+		Build\ccnetcall-build-language-package.bat = Build\ccnetcall-build-language-package.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Debug|x86.Build.0 = Debug|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8B4DD96-8205-401C-A858-34FC0077B02D}.Release|x86.Build.0 = Release|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Debug|x86.Build.0 = Debug|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Release|x86.ActiveCfg = Release|Any CPU
+		{0B2548D8-7D0D-4063-9CA9-F16A2ED870AB}.Release|x86.Build.0 = Release|Any CPU
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Debug|Any CPU.Build.0 = Debug|x86
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Debug|x86.ActiveCfg = Debug|x86
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Debug|x86.Build.0 = Debug|x86
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Release|Any CPU.ActiveCfg = Release|x86
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Release|x86.ActiveCfg = Release|x86
+		{2CB571A7-3BB1-4B43-B091-D551E1D54A75}.Release|x86.Build.0 = Release|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Debug|Any CPU.Build.0 = Debug|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Debug|x86.ActiveCfg = Debug|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Debug|x86.Build.0 = Debug|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Release|Any CPU.ActiveCfg = Release|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Release|x86.ActiveCfg = Release|x86
+		{1A3C2B4F-704A-4FDA-9257-E317E2700B40}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

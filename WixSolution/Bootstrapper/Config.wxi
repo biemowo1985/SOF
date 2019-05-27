@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+	<!-- TODO: Put your code here. -->
+  <?define ProductVersion = "$(var.MsiVersion)"?>
+  <?define ProductUpgradeCode = "1a3c2b4f-704a-4fda-9257-e317e2700b40"?>
+</Include>

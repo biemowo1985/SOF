@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CustomBA" 
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <System:String x:Key="ProductName">Language Package</System:String>
+    <System:String x:Key="InstallButtonText">Install</System:String>
+    <System:String x:Key="Agree">Agree</System:String>
+    <System:String x:Key="License">License</System:String>
+    <System:String x:Key="And">And</System:String>
+    <System:String x:Key="Privacy">Privacy and Policy</System:String>
+    <System:String x:Key="CustomeInstall">Custom</System:String>
+    <System:String x:Key="InstallLocation">Location：</System:String>
+    <System:String x:Key="Browse">Browse</System:String>
+    <System:String x:Key="ToDeskTop">Create Desktop Icon</System:String>
+    <System:String x:Key="Install">Install</System:String>
+    <System:String x:Key="Back">Back</System:String>
+    <System:String x:Key="Finish">Finish</System:String>
+    <System:String x:Key="Repair">Repair</System:String>
+    <System:String x:Key="Uninstall">Uninstall</System:String>
+    <System:String x:Key="Cancel">Cancel</System:String>
+    <System:String x:Key="Version">v1.1.0.0</System:String>
+    <System:String x:Key="Close">Close</System:String>
+    <System:String x:Key="HasOldVersion">An old version has been installed.</System:String>
+    <System:String x:Key="InstallInformation">Setup will install {0} </System:String>
+</ResourceDictionary>

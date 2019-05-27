@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Config.wxi?>
+	<Product Id="*" Name="AMyProduct" Language="1033" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="$(var.ProductUpgradeCode)">
+		<Package Id='*' InstallerVersion="200" Compressed="yes" InstallPrivileges="elevated" InstallScope="perMachine" />
+
+		<MajorUpgrade AllowDowngrades="no" AllowSameVersionUpgrades="no" DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+    <Binary Id="CaBinary" SourceFile="$(var.CustomActions.TargetDir)\CustomActions.CA.dll" />
+
+		<Feature Id="ProductFeature" Title="SetupProject" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+
+    <Property Id="PRODUCTVERSION" Value="$(var.ProductVersion)"/>
+
+    <Property Id="INSTALLFOLDERS" Value="C:\MyProduct" Secure="yes" />
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="INSTALLFOLDERS">
+				<Directory Id="INSTALLFOLDER" Name="SetupProject" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <Component Id="ProductVersion.txt" Guid="{BA6368C5-52B3-47EA-AB1B-4DD25EB627A4}">
+        <File Id="ProductVersion.txt" Source="Files\ProductVersion.txt" KeyPath="yes" />
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
